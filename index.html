@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Printer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.jsdelivr.net/gh/davidshimjs/qrcodejs/qrcode.min.js"></script>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Raleway:wght@100;200;300;400;500;600;700&display=swap");
+
+      /* font link  */
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Rubik+Scribble&display=swap');
+ 
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rubik+Scribble&display=swap');
+/* body {
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+    } */
+    /* *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    } */
+
+    #qrcode {
+      margin: auto;
+      display: block;
+      margin-top: 20px;
+      padding: 10px;
+      border: 2px solid white;
+      box-shadow: 0px 0 30px rgba(15, 18, 35, 0.15);
+    }
+
+    #qrcode img {
+      width: 200px;
+    }
+
+    .main_printer {
+      width: 100%;
+      background-color: #0000;
+    }
+
+    .main_printer h1 {
+      /* font-family: "Rubik Wet Paint", system-ui; */
+      font-family: "Rubik Scribble", system-ui;
+      margin: 0;
+      padding: 5px 0px;
+      font-size: 35px;
+      text-align: center;
+    }
+
+    .p_printer p {
+      font-family: "Open Sans", sans-serif;
+      letter-spacing: 0.5px;
+      word-spacing: 2px;
+      padding: 15px;
+      text-align: justify;
+      font-size: 15px;
+      line-height: 25px;
+      font-weight: 500;
+    }
+
+    .main_img {
+      display: flex;
+    }
+
+    .printer_img img {
+      width: 300px;
+      margin-left: 36px;
+      padding: 10px;
+      box-shadow: 0px 0 30px rgba(15, 18, 35, 0.15);
+      border-radius: 12px;
+    }
+
+    .printer_img {
+      margin-left: 45px;
+      padding: 10px 0px;
+    }
+
+    .text {
+      text-align: center;
+    }
+
+    .footer{
+      height: auto;
+      background-color: black;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .footer_tnx p{
+      color: white;
+      padding-top: 50px;
+      font-family: "Open Sans", sans-serif;
+    
+    }
+
+    .footer_main{
+      display: flex;
+      justify-content: center;
+    }
+
+    .child_footer{
+      padding: 10px 13.5px;
+      border-radius: 40px;
+      background-color: #1386D3;
+      margin-top: 20px;
+      margin: 20px;
+    }
+
+    .child_footer:hover{
+      background-color: white;
+    }
+    .child_footer i:hover{
+      color: #1386D3;
+    }
+
+    .child_footer i{
+      color: white;
+      font-size: 15px;
+    }
+
+    .footer_copy p
+    {
+      color: white;
+      font-family: "Open Sans", sans-serif;
+      padding-bottom: 18px;
+      margin-bottom: -8px;
+      /* margin-left: -8px; */
+
+    }
+
+    @media (max-width: 767px) {
+      .main_img {
+        flex-wrap: wrap;
+      }
+
+      .printer_img {
+        margin: 0 auto;
+        margin-top: 10px;
+        margin-left: 10px;
+      }
+
+      .printer_img img {
+        padding-top: 20px;
+        padding-left: 10px;
+        width: 90%;
+        margin: 0 auto;
+      }
+
+      .main_printer h1 {
+        font-size: 32px;
+      }
+
+      #qrcode {
+        margin-top: 30px;
+        margin-bottom: 25px;
+      }
+    }
+
+
+
+    @media (min-width: 768px) and (max-width: 1050px) {
+      .main_img {
+        display: flex;
+        flex-wrap: wrap;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <div class="main_printer">
+      <hr />
+      <h1>PRINTER</h1>
+      <hr />
+    </div>
+    <div class="p_printer">
+      <p>
+        A printer is a device that accepts text and graphic output from a
+        computer and transfers the information to paper, usually to
+        standard-size, 8.5" by 11" sheets of paper. Printers vary in size,
+        speed, sophistication and cost. In general, more expensive printers
+        are used for more frequent printing or high-resolution color
+        printing.Personal computer printers can be distinguished as impact or
+        non-impact printers. Early impact printers worked something like an
+        automatic typewriter, with a key striking an inked impression on paper
+        for each printed character.
+      </p>
+      <hr />
+    </div>
+    <div>
+      <div class="main_img">
+        <div class="printer_img">
+          <img src="https://5.imimg.com/data5/SELLER/Default/2023/10/351970712/KG/RC/RU/2190369/epson-color-printer.png"
+            alt="" />
+        </div>
+
+        <div class="printer_img">
+          <img src="https://m.media-amazon.com/images/I/61SHT8v1bYL._AC_UF1000,1000_QL80_.jpg" alt="" />
+        </div>
+
+        <div id="qrcode"></div>
+      </div>
+      <hr />
+
+      <div class="text">
+        <!-- <div>
+          <p><a href=""></a>THIS CREATED BY DHUKAMUHAMMAD</p>
+        </div> -->
+
+        <div class="footer">
+          <div class="footer_tnx">
+            <p>TANKS FOR VISITING MY WEBSITE</p>
+          </div>
+
+          <div class="footer_main">
+            <div class="child_footer"><a href="https://www.instagram.com/i__ammohammad/"><i class="fa-brands fa-instagram"></i></a></div>
+            <div class="child_footer"><a href="https://www.facebook.com/aman.dhukka.3"><i class="fa-brands fa-facebook-f"></i></a></div>
+            <div class="child_footer"><a href="https://github.com/dhukamuhammad"><i class="fa-brands fa-github"></i></a></div>
+            <div class="child_footer"><a href="https://twitter.com/login"><i class="fa-brands fa-x-twitter"></i></a></div>
+
+
+          </div>
+
+          <div class="footer_copy">  
+            <p>Copyright © 2023</p>
+          </div>
+
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+  <script>
+    var urlToRedirect = "https://dhukamuhammad.github.io/printer/info.html";
+    var qrcode = new QRCode(document.getElementById("qrcode"), {
+      text: urlToRedirect,
+    });
+  </script>
+</body>
+
+</html>
